@@ -1,7 +1,5 @@
 # System Health Check
 
-**Author:** Ivaylo Atanassov  
-
 ## Description
 Python script that generates a comprehensive system health report. It collects CPU, memory, disk usage, system uptime, network connectivity, response time, and Windows service status (if applicable). The output is displayed in the terminal with color-coded warnings and saved to a timestamped log file.
 
