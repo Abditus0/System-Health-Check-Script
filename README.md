@@ -48,7 +48,7 @@ That's it. The script prints the report to the terminal and drops a copy in `Log
 
 **Network test that hung the whole script.** Originally I used a basic `requests.get()` with no timeout to test connectivity. If the network was up but slow, or if there was a DNS issue, the script would just sit there for 30+ seconds waiting. Added an explicit timeout so a failed network test fails fast instead of stalling everything else.
 
-**Color codes leaking into the log file.** Terminal color codes look great in the terminal and look like garbage in a text file (`\033[92m` everywhere). First version wrote the same string to both. Fixed it by keeping two versions of each line: one with color for the terminal, one plain for the log. Now the log is clean text you can grep or paste into a ticket.
+**Color codes leaking into the log file.** Terminal color codes look great in the terminal and look like garbage in a text file (`\033[92m` everywhere). First version wrote the same string to both. Fixed it by keeping two versions of each line: one with color for the terminal, one plain for the log. Now the log is clean text.
 
 ## What I learned
 
